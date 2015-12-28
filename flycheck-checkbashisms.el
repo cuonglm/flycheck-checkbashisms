@@ -53,12 +53,12 @@
   :group 'flycheck
   :link '(url-link :tag "Github" "https://github.com/Gnouc/flycheck-checkbashisms"))
 
-(flycheck-def-option-var flycheck-checkbashisms-newline nil checkbashisms
+(flycheck-def-option-var flycheck-checkbashisms-newline nil sh-checkbashisms
   "Check for 'echo -n' usage"
   :safe #'booleanp
   :type 'boolean)
 
-(flycheck-def-option-var flycheck-checkbashisms-posix nil checkbashisms
+(flycheck-def-option-var flycheck-checkbashisms-posix nil sh-checkbashisms
   "Check non POSIX issues but required by Debian Policy 10.4
 Enable this also enable `flycheck-checkbashisms-newline'"
   :safe #'booleanp
