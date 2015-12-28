@@ -1,4 +1,4 @@
-;;; flycheck-checkbashisms.el --- checkbashisms intergrate with flycheck -*- lexical-binding: t; -*-
+;;; flycheck-checkbashisms.el --- checkbashisms checker for flycheck -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2015  Cuong Le
 ;; All rights reserved.
