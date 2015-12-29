@@ -1,6 +1,6 @@
 #Flycheck linter for sh using [checkbashisms][checkbashisms-url]
 
-[![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)
+[![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)[![MELPA Stable](http://stable.melpa.org/packages/flycheck-checkbashisms-badge.svg)](http://stable.melpa.org/#/flycheck-checkbashisms)
 
 ##Installation
 
@@ -37,7 +37,10 @@ Copy `flycheck-checkbashisms` file to `load-path`, then add these lines to `init
 
 ### Melpa
 
-This package is also available in [Melpa](https://melpa.org/#/flycheck-checkbashisms).
+This package is also available in:
+
+* [Melpa](https://melpa.org/#/flycheck-checkbashisms)
+* [Melpa stable](http://stable.melpa.org/#/flycheck-checkbashisms)
 
 If you use `use-package`:
 ```elisp
