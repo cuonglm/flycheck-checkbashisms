@@ -60,7 +60,7 @@
 
 (flycheck-def-option-var flycheck-checkbashisms-posix nil sh-checkbashisms
   "Check non POSIX issues but required by Debian Policy 10.4
-Enable this also enable `flycheck-checkbashisms-newline'"
+Enable this also make `flycheck-checkbashisms-newline' effects"
   :safe #'booleanp
   :type 'boolean)
 
@@ -89,7 +89,7 @@ See URL: `https://anonscm.debian.org/cgit/collab-maint/devscripts.git/tree/scrip
 ;;;###autoload
 (defun flycheck-checkbashisms-setup ()
   "Setup Flycheck checkbashisms.
-Add `checkbashisms' to `flycheck-checkers'."
+Add `sh-checkbashisms' to `flycheck-checkers'."
   (add-to-list 'flycheck-checkers 'sh-checkbashisms))
 
 (provide 'flycheck-checkbashisms)
