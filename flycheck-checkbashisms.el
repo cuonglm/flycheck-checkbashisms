@@ -77,20 +77,23 @@ See URL: `https://anonscm.debian.org/cgit/collab-maint/devscripts.git/tree/scrip
           (one-or-more not-newline) " line " line " " (message) ":"
           line-end))
   :modes sh-mode
-  :predicate (lambda () (not (eq sh-shell 'bash)))
+  :predicate (lambda () (eq sh-shell 'sh))
   :verify (lambda (_)
-            (let ((_not-bash (not (eq sh-shell 'bash))))
+            (let ((bin-sh-p (eq sh-shell 'sh)))
               (list
                (flycheck-verification-result-new
                 :label (format "Check shell %s" sh-shell)
-                :message (if _not-bash "yes" "no")
-                :face (if _not-bash 'success '(bold warning)))))))
+                :message (if bin-sh-p "yes" "no")
+                :face (if bin-sh-p 'success '(bold warning))))))
+  :next-checkers ((warning . sh-shellcheck)))
 
 ;;;###autoload
 (defun flycheck-checkbashisms-setup ()
   "Setup Flycheck checkbashisms.
-Add `sh-checkbashisms' to `flycheck-checkers'."
-  (add-to-list 'flycheck-checkers 'sh-checkbashisms))
+Add `sh-checkbashisms' to the end of `flycheck-checkers'."
+  (interactive)
+  (add-to-list 'flycheck-checkers 'sh-checkbashisms t)
+  (flycheck-add-next-checker 'sh-posix-dash '(error . sh-checkbashisms)))
 
 (provide 'flycheck-checkbashisms)
 ;;; flycheck-checkbashisms.el ends here
