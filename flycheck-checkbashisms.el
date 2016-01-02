@@ -84,8 +84,7 @@ See URL: `https://anonscm.debian.org/cgit/collab-maint/devscripts.git/tree/scrip
                (flycheck-verification-result-new
                 :label (format "Check shell %s" sh-shell)
                 :message (if bin-sh-p "yes" "no")
-                :face (if bin-sh-p 'success '(bold warning))))))
-  :next-checkers ((warning . sh-shellcheck)))
+                :face (if bin-sh-p 'success '(bold warning)))))))
 
 ;;;###autoload
 (defun flycheck-checkbashisms-setup ()
@@ -93,7 +92,11 @@ See URL: `https://anonscm.debian.org/cgit/collab-maint/devscripts.git/tree/scrip
 Add `sh-checkbashisms' to the end of `flycheck-checkers'."
   (interactive)
   (add-to-list 'flycheck-checkers 'sh-checkbashisms t)
-  (flycheck-add-next-checker 'sh-posix-dash '(error . sh-checkbashisms)))
+  (mapc (lambda (checker)
+          (flycheck-add-next-checker checker '(warning . sh-checkbashisms) 'append))
+        '(sh-posix-dash
+          sh-posix-bash
+          sh-shellcheck)))
 
 (provide 'flycheck-checkbashisms)
 ;;; flycheck-checkbashisms.el ends here
