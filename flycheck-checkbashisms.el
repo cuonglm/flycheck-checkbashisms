@@ -53,6 +53,9 @@
   :group 'flycheck
   :link '(url-link :tag "Github" "https://github.com/Gnouc/flycheck-checkbashisms"))
 
+;; Variables used in other modes
+(defvar sh-shell)                       ; From sh-script, for shell checker predicate
+
 (flycheck-def-option-var flycheck-checkbashisms-newline nil sh-checkbashisms
   "Check for 'echo -n' usage"
   :safe #'booleanp
