@@ -1,7 +1,5 @@
 language: emacs-lisp
 
-sudo: false
-
 env:
   - EMACS_VERSION=24.5
 
@@ -13,6 +11,8 @@ before_install:
   - emacs --version
 
 install:
+  - sudo apt-get -qq update
+  - sudo apt-get -qq install devscripts
   - cask install
 
 script:
