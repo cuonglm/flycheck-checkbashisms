@@ -71,6 +71,7 @@ Enable this also make `flycheck-checkbashisms-newline' effects"
   "A linter for sh script.
 See URL: `https://anonscm.debian.org/cgit/collab-maint/devscripts.git/tree/scripts/checkbashisms.pl'"
   :command ("checkbashisms"
+            "-f"
             (option-flag "-n" flycheck-checkbashisms-newline)
             (option-flag "-p" flycheck-checkbashisms-posix)
             "-")
