@@ -1,10 +1,10 @@
-#Flycheck linter for sh using [checkbashisms][checkbashisms-url]
+# Flycheck linter for sh using [checkbashisms][checkbashisms-url]
 
 [![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)[![MELPA Stable](http://stable.melpa.org/packages/flycheck-checkbashisms-badge.svg)](http://stable.melpa.org/#/flycheck-checkbashisms)[![Build Status](https://travis-ci.org/Gnouc/flycheck-checkbashisms.svg)](https://travis-ci.org/Gnouc/flycheck-checkbashisms)
 
-##Installation
+## Installation
 
-###Install [checkbashisms][checkbashisms-url]
+### Install [checkbashisms][checkbashisms-url]
 
 [checkbashisms][checkbashisms-url] is part of Debian [devscript][devscript-url].
 
@@ -27,7 +27,7 @@ or you can download manually and add [checkbashisms][checkbashisms-url] to your 
 
 ### Install flycheck-checkbashisms
 
-####Manual installation
+#### Manual installation
 
 Copy `flycheck-checkbashisms` file to `load-path`, then add these lines to `init.el`:
 ```elisp
@@ -50,7 +50,7 @@ If you use `use-package`:
   (flycheck-checkbashisms-setup))
 ```
 
-##Customize variables
+## Customize variables
 
 ```elisp
 ;; Check 'echo -n' usage
