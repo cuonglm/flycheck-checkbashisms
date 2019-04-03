@@ -3,7 +3,7 @@
 ;; Copyright (C) 2016  Cuong Le
 
 ;; Author: LE Manh Cuong <cuong.manhle.vn@gmail.com>
-;; URL: https://github.com/Gnouc/flycheck-checkbashisms
+;; URL: https://github.com/cuonglm/flycheck-checkbashisms
 
 ;;; Commentary:
 
