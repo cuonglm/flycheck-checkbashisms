@@ -1,6 +1,8 @@
 # Flycheck linter for sh using [checkbashisms][checkbashisms-url]
 
-[![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)[![MELPA Stable](http://stable.melpa.org/packages/flycheck-checkbashisms-badge.svg)](http://stable.melpa.org/#/flycheck-checkbashisms)[![Build Status](https://travis-ci.org/cuonglm/flycheck-checkbashisms.svg)](https://travis-ci.org/cuonglm/flycheck-checkbashisms)
+![Build status](https://github.com/cuonglm/flycheck-checkbashisms/actions/workflows/ci.yml/badge.svg?branch=master)
+[![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)
+[![MELPA Stable](http://stable.melpa.org/packages/flycheck-checkbashisms-badge.svg)](http://stable.melpa.org/#/flycheck-checkbashisms)
 
 ## Installation
 
