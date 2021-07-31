@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs_version:
+          - '26.3'
+          - '27.2'
+    steps:
+      - uses: purcell/setup-emacs@master
+        with:
+          version: ${{ matrix.emacs_version }}
+      - uses: conao3/setup-cask@master
+      - uses: actions/checkout@v2
+      - run: |
+          sudo apt-get -qq update
+          sudo apt-get -qq install devscripts
+      - run: cask install
+      - run: make compile
+      - run: make test
