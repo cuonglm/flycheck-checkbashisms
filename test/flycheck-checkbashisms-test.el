@@ -1,6 +1,6 @@
 ;;; flycheck-checkbashisms-test.el --- flycheck-checkbashisms test cases  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2016  Cuong Le
+;; Copyright (C) 2021  Cuong Manh Le
 
 ;; Author: LE Manh Cuong <cuong.manhle.vn@gmail.com>
 ;; URL: https://github.com/cuonglm/flycheck-checkbashisms
