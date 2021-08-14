@@ -1,6 +1,6 @@
 # Flycheck linter for sh using [checkbashisms][checkbashisms-url]
 
-![Build status](https://github.com/cuonglm/flycheck-checkbashisms/actions/workflows/ci.yml/badge.svg?branch=master)
+![Build status](https://github.com/cuonglm/flycheck-checkbashisms/actions/workflows/ci.yml/badge.svg?branch=main)
 [![MELPA](https://melpa.org/packages/flycheck-checkbashisms-badge.svg)](https://melpa.org/#/flycheck-checkbashisms)
 [![MELPA Stable](http://stable.melpa.org/packages/flycheck-checkbashisms-badge.svg)](http://stable.melpa.org/#/flycheck-checkbashisms)
 
