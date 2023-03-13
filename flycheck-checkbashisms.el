@@ -48,7 +48,7 @@
 (require 'flycheck)
 
 (defgroup flycheck-checkbashisms nil
-  "checkbashisms intergrate with flycheck"
+  "`checkbashisms' intergration for flycheck."
   :prefix "flycheck-checkbashisms"
   :group 'flycheck
   :link '(url-link :tag "Github" "https://github.com/cuonglm/flycheck-checkbashisms"))
@@ -57,7 +57,7 @@
 (defvar sh-shell)                       ; From sh-script, for shell checker predicate
 
 (flycheck-def-option-var flycheck-checkbashisms-newline nil sh-checkbashisms
-  "Check for 'echo -n' usage"
+  "Check for `echo -n' usage"
   :safe #'booleanp
   :type 'boolean)
 
